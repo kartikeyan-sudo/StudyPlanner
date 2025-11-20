@@ -12,6 +12,7 @@ import AddSubjectForm from './components/AddSubjectForm';
 import Assignments from './components/Assignments';
 import StudyRoom from './components/StudyRoom';
 import AdminCMS from './components/AdminCMS';
+import Watermark from './components/Watermark';
 import { Sun, Moon } from './components/Icons';
 
 const EXAMPLE_JSON = {
@@ -685,6 +686,9 @@ function App() {
           onCancel={() => setShowAddSubjectForm(false)}
         />
       )}
+
+      {/* Watermark - visible on all pages */}
+      <Watermark />
     </div>
     </div>
   );
